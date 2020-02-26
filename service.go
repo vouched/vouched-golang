@@ -13,6 +13,15 @@ type APIClient struct {
 type JobResponse struct {
 	ID      string
 	Status  string
+	Review  string
+	ReviewPass	string
+	ReviewedAt  string
+	Logs struct {
+		ReviewedEntities  string
+		CreatedAt  string
+		FirstName  string
+		LastName  string
+	}
 	Request struct {
 		Type        string
 		CallbackURL string

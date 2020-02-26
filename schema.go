@@ -8,6 +8,15 @@ import (
 const JobFragment = `
 			id
 			status
+			review
+			reviewPass
+			reviewedAt
+			logs {
+				reviewedEntities
+				createdAt
+				firstName
+				lastName
+			}
 			request {
 				type
 				callbackURL
